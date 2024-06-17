@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+   
+    font-family: 'montserrat';
+
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    perspective: 100%;
+}
+body::-webkit-scrollbar
+{
+    background-color:black;
+    width: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color:#AEE123;
+    width: 2px;
+    height: 20px;
+    border-radius:50px;
+}
+*::selection
+{
+    background-color: white;
+    color: #AEE123;
+}
+
+#nav
+{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0 120px;
+    gap:52px;
+    z-index:99;
+    position: fixed;
+    color: white;
+}
+
+#nav img 
+{
+    /* width: 98px;
+    height: 74px; */
+    width: 90px;
+    height: 66px;
+}
+
+#nav h4
+{   
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* #nav.active{
+} */
+#nav h4:hover {
+    color:#95C11E;
+    /* color: black; */
+}
+
+#nav button
+{
+    background-color:black;
+    width:170px;
+    height: 50px;
+    border:3px solid #95C11E;
+    border-radius:24px;
+    text-transform:uppercase;
+    font-size:15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: all  0.4s ease-in-out;
+}
+#nav button:hover
+{
+    background-color: #95C11E;
+    color: black;
+    font-weight: 600;
+}
+
+#cursor
+{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    z-index: 10;
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+#cursor-blur
+{
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    background-color: #96c11eb4;
+    border-radius: 50%;
+    z-index: 5;
+    filter: blur(100px);
+    transition: all 0.1s ease-in-out;
+}
+video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0,0,0.3);
+    color: white;
+    
+}
+#cookie
+{
+    position:fixed;
+    top:93%;
+    left:20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    height:40px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+}
+#cookie img
+{
+    position: fixed;
+    height:30px;
+    width:30px;
+    top:93.5%;
+    left:24.5px;
+
+}
+#page1 #arrow
+{
+    position:absolute;
+    left: -30px;
+    top:60%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    border: 2px solid #AEE123;
+    transition: all 0.4s ease-in-out;
+    z-index: 20;
+    cursor: pointer;
+}
+#page1 #arrow i
+{
+    position: absolute;
+    font-size: 40px;
+
+}
+
+#page1
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top:1vh;
+}
+
+#page1 h1{
+    font-size:130px;
+    font-weight: 900;
+    position: relative;
+    z-index:6;
+}
+#page1 h1::before
+{
+    content:"EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    left: -5px;
+    top: -5px;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index:-1;
+}
+
+#page1 h2
+{
+    font-weight: 800;
+    font-size:28px;
+    padding-top: 10px;
+}
+
+#page1 h4
+{
+    font-weight: 400;
+    font-size:18px;
+    padding-top: 12px;
+    width: 42%;
+    text-align: center;
+    line-height: 1.3;
+}
+
+#page2
+{
+    min-height : 100vh;
+    width: 100%;    
+    overflow: hidden;
+}
+
+#scroller{
+    display:flex;
+    margin-top:20px;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    position: relative;
+    
+    z-index: 10;
+    
+}
+#scroller::-webkit-scrollbar
+{
+    display: none;
+}
+.scroll-text
+{
+    display: flex;
+    animation: scroll-text 35s linear infinite;
+}
+.scroll-text h4{
+    padding-right: 25px;
+    white-space: nowrap;
+    color: transparent;
+    font-size: 120px;
+    font-family: gilroy;
+    -webkit-text-stroke: 2px #95C11E;
+    transition: all linear 0.3s;
+    text-transform: uppercase;
+}
+
+
+ #scroller::-webkit-scrollbar {
+    display: none;
+  }
+.scroll-text h4:hover
+{
+    color: #95C11E;
+    -webkit-text-stroke: 2px #95c11e;
+} 
+
+@keyframes scroll-text {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+

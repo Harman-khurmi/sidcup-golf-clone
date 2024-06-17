@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page3
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#page3>p
+{
+ text-align: center;
+ font-size: 28px;
+ font-weight: 900;
+ text-transform: uppercase;
+ width: 60%;
+ line-height: 44px;
+}
+#page3 img
+{
+    height: 48px;
+    position: absolute;
+}
+#page3 #colon1
+{
+    top: 25%;
+    left:13%;
+}
+#page3 #colon2
+{
+    bottom: 25%;
+    right:15%;
+}
+
+#box {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 3%;
+    margin-top:-40px;
+}
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 29%;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 0 -3%;
+    background-color: #95C11E;
+    position: relative;
+    z-index: 15;
+    cursor: pointer;
+}
+#box .boxes img {
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+}
+#box .boxes h2 {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    z-index: 20;
+    transition: all ease-in-out 0.3s;
+}
+#box h1
+{
+    position: absolute;
+    top:-25px;
+    font-size: 90px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    font-family: gilroy;
+    -webkit-text-stroke: 1px white;
+    transition: -webkit-text-stroke ease-in-out 0.3s;
+}
+
+#footer
+{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left bottom,#20A337,#AEE123);
+    color: black;
+    gap: 100px;
+    margin-top: 30px;
+}
+#footer img
+{
+    height: 120px;
+    width: 120px;
+    margin-top: -90px;
+    margin-left: -80px;
+    position: relative;
+   
+}
+#footer .foot-content h3
+{
+    position: relative;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 44px;
+    text-transform: uppercase;
+    
+}
+#f1,#f2{
+    margin-top: -60px;
+    position: relative;
+}
+#f3
+{
+    position: relative;
+    margin-top: -50px;
+    width: 15%;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 20px;
+}
+#footer #foot-dots
+{
+    position: absolute;
+    align-items: center;
+    justify-content:left;
+    left:-20px;
+    top:70px;
+    height: 400px;
+    width: 400px;
+}
+
+#privacy
+{
+    position: absolute;
+    top:90%;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
