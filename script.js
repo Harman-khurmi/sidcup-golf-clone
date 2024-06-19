@@ -7,19 +7,22 @@ var img = document.querySelectorAll("#card-container .card .card-image")
 var box = document.querySelectorAll("#box");
 var arrow=document.querySelector("#page1 #arrow");
 
-document.addEventListener('DOMContentLoaded', function() {
-  OverlayScrollbars(document.body, {
-      className: 'os-theme-dark',
-      scrollbars: {
-          visibility: 'auto',
-          autoHide: 'leave',
-          autoHideDelay: 800,
-          dragScrolling: true,
-          clickScrolling: true,
-          touchSupport: true
-      }
-  });
-});
+//for firefox scroll bar
+// Check for Firefox using a specific feature
+if (typeof window.InstallTrigger !== 'undefined') {
+  const styleElement = document.createElement('style');
+  styleElement.textContent = `
+    html {
+      overflow-y: scroll;
+      scrollbar-color: #AEE123 #000 ;
+      scrollbar-width: thin;
+      scroll-behavior: smooth;
+      scrollbar-arrow-color: transparent;
+    }
+  `;
+  document.head.appendChild(styleElement);
+}
+
 
 // var boximg=document.querySelectorAll("#box img");
 document.addEventListener("mousemove", (dets) => {
