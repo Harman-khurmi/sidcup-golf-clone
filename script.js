@@ -6,6 +6,21 @@ var overlay = document.querySelectorAll("#card-container .card .overlay");
 var img = document.querySelectorAll("#card-container .card .card-image")
 var box = document.querySelectorAll("#box");
 var arrow=document.querySelector("#page1 #arrow");
+
+document.addEventListener('DOMContentLoaded', function() {
+  OverlayScrollbars(document.body, {
+      className: 'os-theme-dark',
+      scrollbars: {
+          visibility: 'auto',
+          autoHide: 'leave',
+          autoHideDelay: 800,
+          dragScrolling: true,
+          clickScrolling: true,
+          touchSupport: true
+      }
+  });
+});
+
 // var boximg=document.querySelectorAll("#box img");
 document.addEventListener("mousemove", (dets) => {
   crsr.style.left = dets.x - 6 + "px";
