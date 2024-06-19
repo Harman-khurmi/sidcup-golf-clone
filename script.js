@@ -26,8 +26,8 @@ if (typeof window.InstallTrigger !== 'undefined') {
 
 // var boximg=document.querySelectorAll("#box img");
 document.addEventListener("mousemove", (dets) => {
-  crsr.style.left = dets.x - 6 + "px";
-  crsr.style.top = dets.y - 6 + "px";
+  crsr.style.left = dets.x - 10 + "px";
+  crsr.style.top = dets.y - 10 + "px";
   blur.style.left = dets.x - 150 + "px";
   blur.style.top = dets.y - 150 + "px";
 
