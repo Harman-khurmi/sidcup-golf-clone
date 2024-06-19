@@ -27,6 +27,21 @@ body::-webkit-scrollbar-thumb
     height: 20px;
     border-radius:50px;
 }
+body::-moz-scrollbar
+{
+    background-color:black;
+    width: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+body::-moz-scrollbar-thumb
+{
+    background-color:#AEE123;
+    width: 2px;
+    height: 20px;
+    border-radius:50px;
+}
 *::selection
 {
     background-color: white;
