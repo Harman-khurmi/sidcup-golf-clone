@@ -100,7 +100,7 @@ html,body{
     font-weight: 900;
     color: black;
     text-transform: uppercase;
-    font-family: gilroy;
+    font-family: gilroy, sans-serif;
     -webkit-text-stroke: 1px white;
     transition: -webkit-text-stroke ease-in-out 0.3s;
 }

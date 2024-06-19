@@ -12,6 +12,16 @@ html,body{
     width: 100%;
     perspective: 100%;
 }
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Gilroy-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Gilroy-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Gilroy-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
 body::-webkit-scrollbar
 {
     background-color:black;
@@ -267,7 +277,7 @@ video
     white-space: nowrap;
     color: transparent;
     font-size: 120px;
-    font-family: gilroy;
+    font-family: gilroy, sans-serif;
     -webkit-text-stroke: 2px #95C11E;
     transition: all linear 0.3s;
     text-transform: uppercase;
