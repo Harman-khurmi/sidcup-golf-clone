@@ -24,7 +24,7 @@ html,body{
 }
 
 
-body::-webkit-scrollbar
+/* body::-webkit-scrollbar
 {
     background-color:black;
     width: 10px;
@@ -53,7 +53,49 @@ body::-moz-scrollbar-thumb
     width: 2px;
     height: 20px;
     border-radius:50px;
-}
+} */
+/* Base styles for Firefox and generic scrollbars */
+body::-moz-scrollbar {
+    background-color: black; /* Or your desired background color */
+    width: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body::-moz-scrollbar-thumb {
+    background-color: #AEE123; /* Or your desired thumb color */
+    width: 2px;
+    height: 20px;
+    border-radius: 50px;
+  }
+  
+  /* Webkit-based styles for Chrome, Safari, and others */
+  body::-webkit-scrollbar {
+    background-color: black; /* Or your desired background color */
+    width: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #AEE123; /* Or your desired thumb color */
+    width: 2px;
+    height: 20px;
+    border-radius: 50px;
+  }
+  
+  /* Additional styles for a more polished look (optional) */
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #AEE123A0; /* Add a slight transparency on hover */
+  }
+  
+  .scrollbar-container { /* Optional container for better overflow handling */
+    overflow-y: scroll;
+    /* Add other styles for your content area here */
+  }
+  
 *::selection
 {
     background-color: white;
